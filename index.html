@@ -11,7 +11,7 @@
     <style>
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #1d1836;
+            background-color: #050816;
             color: #aaa6c3;
         }
         .gradient-text {
@@ -26,11 +26,11 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         .card-hover:hover {
-            transform: scale(1.02);
+            transform: translateY(-5px);
             box-shadow: 0 10px 30px -15px rgba(0,0,0,0.3);
         }
         .section-heading {
-            border-bottom: 1px solid #333;
+            border-bottom: 1px solid #2d264f;
         }
         .tag {
             background-color: rgba(62, 151, 255, 0.2);
@@ -43,9 +43,8 @@
     <div class="flex flex-col lg:flex-row max-w-7xl mx-auto">
 
         <!-- LEFT COLUMN -->
-        <aside class="w-full lg:w-1/3 lg:min-w-[400px] lg:h-screen lg:sticky top-0 p-8 lg:p-12 flex flex-col items-center lg:items-start text-center lg:text-left bg-cover bg-center" style="background-image: linear-gradient(rgba(5, 8, 22, 0.9), rgba(5, 8, 22, 1)), url('https://placehold.co/800x1200/0a192f/64ffda?text=Code');">
+        <aside class="w-full lg:w-1/3 lg:min-w-[400px] lg:h-screen lg:sticky top-0 p-8 lg:p-12 flex flex-col items-center lg:items-start text-center lg:text-left">
             <div class="my-auto">
-                <!-- Placeholder for a Profile Picture -->
                 <img src="https://placehold.co/150x150/ffffff/0a192f?text=SSK" alt="Sai Sri Kolanu" class="rounded-full w-36 h-36 mx-auto lg:mx-0 mb-6 border-4 border-slate-700">
                 
                 <h1 class="text-4xl lg:text-5xl font-bold text-white">Sai Sri Kolanu</h1>
@@ -71,19 +70,17 @@
         <!-- RIGHT COLUMN -->
         <main class="w-full lg:w-2/3 p-8 lg:p-12 lg:overflow-y-auto">
             
-            <!-- ABOUT SECTION -->
             <section id="about" class="mb-16">
                 <h2 class="text-2xl font-bold tracking-tight text-white mb-6 section-heading pb-3">About Me</h2>
                 <p class="mb-4">As an AI/ML Engineer, I specialize in generative AI, large language models, and the end-to-end deployment of machine learning solutions. My experience is centered around using Python, TensorFlow, and LangChain to build sophisticated conversational agents and practical AI applications.</p>
                 <p>I also have a deep interest in performance and infrastructure, with skills in GPU programming using CUDA and building distributed data systems with tools like Apache Kafka and Spark. I thrive in fast-paced environments where I can take complete ownership of a problem and see it through to a production-ready solution.</p>
             </section>
 
-            <!-- EXPERIENCE SECTION -->
             <section id="experience" class="mb-16">
                 <h2 class="text-2xl font-bold tracking-tight text-white mb-6 section-heading pb-3">Work Experience</h2>
                 <div class="space-y-8">
                     <div class="p-6 rounded-lg card-bg border border-transparent hover:border-violet-700 card-hover">
-                        <div class="flex justify-between items-center">
+                        <div class="flex justify-between items-center flex-wrap gap-2">
                             <h3 class="text-xl font-semibold text-white">Programmer Analyst</h3>
                             <p class="text-sm font-medium">Aug 2023 – Jul 2024</p>
                         </div>
@@ -95,7 +92,7 @@
                         </ul>
                     </div>
                      <div class="p-6 rounded-lg card-bg border border-transparent hover:border-violet-700 card-hover">
-                        <div class="flex justify-between items-center">
+                        <div class="flex justify-between items-center flex-wrap gap-2">
                             <h3 class="text-xl font-semibold text-white">Database Administrator (Part-time)</h3>
                             <p class="text-sm font-medium">Dec 2019 – Dec 2022</p>
                         </div>
@@ -108,125 +105,137 @@
                 </div>
             </section>
 
-            <!-- PROJECTS SECTION -->
             <section id="projects">
                 <h2 class="text-2xl font-bold tracking-tight text-white mb-6 section-heading pb-3">Projects</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-                    <div class="p-6 rounded-lg card-bg card-hover">
-                        <a href="https://github.com/saisrikolanu/Natural-Language-Processing" target="_blank" rel="noopener noreferrer">
+                    <!-- Project Card 1 -->
+                    <a href="https://github.com/saisrikolanu/Natural-Language-Processing" target="_blank" rel="noopener noreferrer" class="block p-6 rounded-lg card-bg card-hover">
+                        <div class="flex flex-col h-full">
                             <img src="https://placehold.co/600x400/151030/915eff?text=NLP" class="rounded-lg mb-4 w-full h-40 object-cover">
                             <h3 class="text-xl font-semibold text-white">Generative AI & NLP</h3>
-                            <p class="mt-2 text-sm text-slate-400">A multi-turn chatbot built with the GPT-3 API and LangChain, featuring conversational memory and TTS for a natural user experience.</p>
+                            <p class="mt-2 text-sm text-slate-400 flex-grow">A multi-turn chatbot built with the GPT-3 API and LangChain, featuring conversational memory.</p>
                             <div class="mt-4 flex flex-wrap gap-2">
                                 <span class="text-xs font-semibold px-2 py-1 rounded tag">Python</span>
                                 <span class="text-xs font-semibold px-2 py-1 rounded tag">LangChain</span>
                                 <span class="text-xs font-semibold px-2 py-1 rounded tag">GPT-3</span>
                             </div>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                     
-                    <div class="p-6 rounded-lg card-bg card-hover">
-                        <a href="https://github.com/saisrikolanu/Credit-Card-Fraud-Detection" target="_blank" rel="noopener noreferrer">
+                    <!-- Project Card 2 -->
+                    <a href="https://github.com/saisrikolanu/Credit-Card-Fraud-Detection" target="_blank" rel="noopener noreferrer" class="block p-6 rounded-lg card-bg card-hover">
+                        <div class="flex flex-col h-full">
                             <img src="https://placehold.co/600x400/151030/915eff?text=Fraud+Detection" class="rounded-lg mb-4 w-full h-40 object-cover">
                             <h3 class="text-xl font-semibold text-white">Fraud Detection Pipeline</h3>
-                            <p class="mt-2 text-sm text-slate-400">An end-to-end pipeline with ensemble ML models to process daily transaction data with 90% accuracy, using anomaly detection to reduce false positives.</p>
+                            <p class="mt-2 text-sm text-slate-400 flex-grow">An end-to-end pipeline with ensemble ML models to process daily transaction data with 90% accuracy.</p>
                              <div class="mt-4 flex flex-wrap gap-2">
                                 <span class="text-xs font-semibold px-2 py-1 rounded tag">Python</span>
                                 <span class="text-xs font-semibold px-2 py-1 rounded tag">Scikit-learn</span>
                                 <span class="text-xs font-semibold px-2 py-1 rounded tag">SQL</span>
                             </div>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
 
-                    <div class="p-6 rounded-lg card-bg card-hover">
-                        <a href="https://github.com/saisrikolanu/Human-Action-Recognition" target="_blank" rel="noopener noreferrer">
+                    <!-- Project Card 3 -->
+                    <a href="https://github.com/saisrikolanu/Human-Action-Recognition" target="_blank" rel="noopener noreferrer" class="block p-6 rounded-lg card-bg card-hover">
+                       <div class="flex flex-col h-full">
                            <img src="https://placehold.co/600x400/151030/915eff?text=Action+Recognition" class="rounded-lg mb-4 w-full h-40 object-cover">
                            <h3 class="text-xl font-semibold text-white">Human Action Recognition</h3>
-                           <p class="mt-2 text-sm text-slate-400">A computer vision system to classify human actions from video frames using deep learning models for real-time monitoring.</p>
+                           <p class="mt-2 text-sm text-slate-400 flex-grow">A computer vision system to classify human actions from video frames using deep learning models.</p>
                              <div class="mt-4 flex flex-wrap gap-2">
                                <span class="text-xs font-semibold px-2 py-1 rounded tag">Python</span>
                                <span class="text-xs font-semibold px-2 py-1 rounded tag">OpenCV</span>
                                <span class="text-xs font-semibold px-2 py-1 rounded tag">Deep Learning</span>
                            </div>
-                       </a>
-                   </div>
+                       </div>
+                   </a>
 
-                    <div class="p-6 rounded-lg card-bg card-hover">
-                        <a href="https://github.com/saisrikolanu/Face-Recognition" target="_blank" rel="noopener noreferrer">
+                    <!-- Project Card 4 -->
+                    <a href="https://github.com/saisrikolanu/Face-Recognition" target="_blank" rel="noopener noreferrer" class="block p-6 rounded-lg card-bg card-hover">
+                       <div class="flex flex-col h-full">
                            <img src="https://placehold.co/600x400/151030/915eff?text=Face+Recognition" class="rounded-lg mb-4 w-full h-40 object-cover">
                            <h3 class="text-xl font-semibold text-white">Face Recognition</h3>
-                           <p class="mt-2 text-sm text-slate-400">A system to identify and verify individuals from images or video streams using computer vision techniques.</p>
+                           <p class="mt-2 text-sm text-slate-400 flex-grow">A system to identify and verify individuals from images or video streams using computer vision techniques.</p>
                              <div class="mt-4 flex flex-wrap gap-2">
                                <span class="text-xs font-semibold px-2 py-1 rounded tag">Python</span>
                                <span class="text-xs font-semibold px-2 py-1 rounded tag">Computer Vision</span>
                            </div>
-                       </a>
-                   </div>
+                       </div>
+                   </a>
 
-                   <div class="p-6 rounded-lg card-bg card-hover">
-                        <a href="https://github.com/saisrikolanu/Movie-Recommender-System" target="_blank" rel="noopener noreferrer">
+                   <!-- Project Card 5 -->
+                    <a href="https://github.com/saisrikolanu/Movie-Recommender-System" target="_blank" rel="noopener noreferrer" class="block p-6 rounded-lg card-bg card-hover">
+                       <div class="flex flex-col h-full">
                            <img src="https://placehold.co/600x400/151030/915eff?text=Recommender" class="rounded-lg mb-4 w-full h-40 object-cover">
                            <h3 class="text-xl font-semibold text-white">Movie Recommender System</h3>
-                           <p class="mt-2 text-sm text-slate-400">A system to recommend movies to users based on their viewing history and content-based filtering.</p>
+                           <p class="mt-2 text-sm text-slate-400 flex-grow">A system to recommend movies to users based on their viewing history and content-based filtering.</p>
                              <div class="mt-4 flex flex-wrap gap-2">
                                <span class="text-xs font-semibold px-2 py-1 rounded tag">Python</span>
-                               <span class="text-xs font-semibold px-2 py-1 rounded tag">Machine Learning</span>
+                               <span class="text-xs font-semibold px-2 py-1 rounded tag">ML</span>
                            </div>
-                       </a>
-                   </div>
+                       </div>
+                   </a>
 
-                   <div class="p-6 rounded-lg card-bg card-hover">
-                        <a href="https://github.com/saisrikolanu/Image-Caption-Generator" target="_blank" rel="noopener noreferrer">
+                   <!-- Project Card 6 -->
+                    <a href="https://github.com/saisrikolanu/Image-Caption-Generator" target="_blank" rel="noopener noreferrer" class="block p-6 rounded-lg card-bg card-hover">
+                       <div class="flex flex-col h-full">
                            <img src="https://placehold.co/600x400/151030/915eff?text=Image+Captioning" class="rounded-lg mb-4 w-full h-40 object-cover">
                            <h3 class="text-xl font-semibold text-white">Image Caption Generator</h3>
-                           <p class="mt-2 text-sm text-slate-400">An AI model that automatically generates descriptive captions for images using a blend of CNNs and LSTMs.</p>
+                           <p class="mt-2 text-sm text-slate-400 flex-grow">An AI model that automatically generates descriptive captions for images using CNNs and LSTMs.</p>
                              <div class="mt-4 flex flex-wrap gap-2">
                                <span class="text-xs font-semibold px-2 py-1 rounded tag">Python</span>
                                <span class="text-xs font-semibold px-2 py-1 rounded tag">NLP</span>
                                <span class="text-xs font-semibold px-2 py-1 rounded tag">Deep Learning</span>
                            </div>
-                       </a>
-                   </div>
+                       </div>
+                   </a>
 
-                   <div class="p-6 rounded-lg card-bg card-hover">
-                        <a href="https://github.com/saisrikolanu/Car-Price-Prediction" target="_blank" rel="noopener noreferrer">
+                   <!-- Project Card 7 -->
+                    <a href="https://github.com/saisrikolanu/Car-Price-Prediction" target="_blank" rel="noopener noreferrer" class="block p-6 rounded-lg card-bg card-hover">
+                       <div class="flex flex-col h-full">
                            <img src="https://placehold.co/600x400/151030/915eff?text=Price+Prediction" class="rounded-lg mb-4 w-full h-40 object-cover">
                            <h3 class="text-xl font-semibold text-white">Car Price Prediction</h3>
-                           <p class="mt-2 text-sm text-slate-400">Using machine learning regression models to predict the market price of used cars based on various features.</p>
+                           <p class="mt-2 text-sm text-slate-400 flex-grow">Using machine learning regression models to predict the market price of used cars based on various features.</p>
                              <div class="mt-4 flex flex-wrap gap-2">
                                <span class="text-xs font-semibold px-2 py-1 rounded tag">Python</span>
                                <span class="text-xs font-semibold px-2 py-1 rounded tag">Regression</span>
                            </div>
-                       </a>
-                   </div>
+                       </div>
+                   </a>
 
-                   <div class="p-6 rounded-lg card-bg card-hover">
-                        <a href="https://github.com/saisrikolanu/Breast-Cancer-Prediction" target="_blank" rel="noopener noreferrer">
+                   <!-- Project Card 8 -->
+                    <a href="https://github.com/saisrikolanu/Breast-Cancer-Prediction" target="_blank" rel="noopener noreferrer" class="block p-6 rounded-lg card-bg card-hover">
+                       <div class="flex flex-col h-full">
                            <img src="https://placehold.co/600x400/151030/915eff?text=Cancer+Prediction" class="rounded-lg mb-4 w-full h-40 object-cover">
                            <h3 class="text-xl font-semibold text-white">Breast Cancer Prediction</h3>
-                           <p class="mt-2 text-sm text-slate-400">A classification model to predict the likelihood of breast cancer from diagnostic medical measurements.</p>
+                           <p class="mt-2 text-sm text-slate-400 flex-grow">A classification model to predict the likelihood of breast cancer from diagnostic medical measurements.</p>
                              <div class="mt-4 flex flex-wrap gap-2">
                                <span class="text-xs font-semibold px-2 py-1 rounded tag">Python</span>
                                <span class="text-xs font-semibold px-2 py-1 rounded tag">Classification</span>
                            </div>
-                       </a>
-                   </div>
+                       </div>
+                   </a>
 
-                   <div class="p-6 rounded-lg card-bg card-hover">
-                        <a href="https://github.com/saisrikolanu/Resume-Parser" target="_blank" rel="noopener noreferrer">
+                   <!-- Project Card 9 -->
+                    <a href="https://github.com/saisrikolanu/Resume-Parser" target="_blank" rel="noopener noreferrer" class="block p-6 rounded-lg card-bg card-hover">
+                       <div class="flex flex-col h-full">
                            <img src="https://placehold.co/600x400/151030/915eff?text=Resume+Parser" class="rounded-lg mb-4 w-full h-40 object-cover">
                            <h3 class="text-xl font-semibold text-white">Resume Parser</h3>
-                           <p class="mt-2 text-sm text-slate-400">A tool to automatically extract key information, such as skills and experience, from resume documents using NLP techniques.</p>
+                           <p class="mt-2 text-sm text-slate-400 flex-grow">A tool to automatically extract key information from resume documents using NLP techniques.</p>
                              <div class="mt-4 flex flex-wrap gap-2">
                                <span class="text-xs font-semibold px-2 py-1 rounded tag">Python</span>
                                <span class="text-xs font-semibold px-2 py-1 rounded tag">NLP</span>
                            </div>
-                       </a>
-                   </div>
+                       </div>
+                   </a>
 
                 </div>
             </section>
+            
+            <footer class="text-center text-sm text-slate-500 mt-16 pb-8">
+                Design inspired by <a href="https://kcharvi.github.io/" target="_blank" rel="noopener noreferrer" class="hover:text-violet-400">kcharvi.github.io</a>
+            </footer>
 
         </main>
     </div>
