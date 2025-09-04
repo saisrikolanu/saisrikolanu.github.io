@@ -262,9 +262,6 @@
                     </div>
                 </section>
 
-                <footer class="max-w-md pb-16 text-sm text-slate-500 sm:pb-0">
-                    <p>Design and layout heavily inspired by the portfolio of <a href="https://kcharvi.github.io/" target="_blank" rel="noopener noreferrer" class="font-medium text-slate-400 hover:text-accent focus-visible:text-accent">Charvi K.</a> Coded in <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer" class="font-medium text-slate-400 hover:text-accent focus-visible:text-accent">Visual Studio Code</a>. Built with <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer" class="font-medium text-slate-400 hover:text-accent focus-visible:text-accent">Tailwind CSS</a> and deployed with <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer" class="font-medium text-slate-400 hover:text-accent focus-visible:text-accent">GitHub Pages</a>.</p>
-                </footer>
             </main>
         </div>
     </div>
@@ -285,11 +282,15 @@
             };
 
             const observer = new IntersectionObserver((entries) => {
+                let visibleSectionId = null;
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
-                        makeNavLinksActive(entry.target.id);
+                        visibleSectionId = entry.target.id;
                     }
                 });
+                if (visibleSectionId) {
+                    makeNavLinksActive(visibleSectionId);
+                }
             }, { rootMargin: '-30% 0px -70% 0px' });
 
             sections.forEach(section => {
@@ -297,7 +298,10 @@
             });
             
             // Initial check in case the user loads in the middle of the page
-            makeNavLinksActive(sections[0].id)
+            if (window.scrollY === 0) {
+                 makeNavLinksActive('about');
+            }
+
 
             // Function for fade-in effect
             const faders = document.querySelectorAll('.fade-in-section');
