@@ -17,21 +17,8 @@
         .text-accent {
             color: #64ffda;
         }
-        .bg-light-navy {
-            background-color: #112240;
-        }
         .text-lightest-slate {
             color: #ccd6f6;
-        }
-        .text-slate {
-            color: #8892b0;
-        }
-        /* For the fade-out hover effect on lists */
-        .group:hover .group-hover\:opacity-50 {
-            opacity: 0.5;
-        }
-        .group:hover .group-hover\:!opacity-100 {
-            opacity: 1 !important;
         }
         /* Animation for fade-in on scroll */
         .fade-in-section {
@@ -75,8 +62,8 @@
                         <ul class="mt-16 w-max">
                             <li><a class="nav-link group flex items-center py-3" href="#about"><span class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-lightest-slate"></span><span class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-lightest-slate">About</span></a></li>
                             <li><a class="nav-link group flex items-center py-3" href="#experience"><span class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-lightest-slate"></span><span class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-lightest-slate">Experience</span></a></li>
+                             <li><a class="nav-link group flex items-center py-3" href="#projects"><span class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-lightest-slate"></span><span class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-lightest-slate">Projects</span></a></li>
                             <li><a class="nav-link group flex items-center py-3" href="#achievements"><span class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-lightest-slate"></span><span class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-lightest-slate">Achievements</span></a></li>
-                            <li><a class="nav-link group flex items-center py-3" href="#projects"><span class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-lightest-slate"></span><span class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-lightest-slate">Projects</span></a></li>
                         </ul>
                     </nav>
                 </div>
@@ -168,142 +155,27 @@
                         </ol>
                     </div>
                 </section>
-                
-                <section id="achievements" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24 fade-in-section">
-                    <div class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0 lg:backdrop-blur-none">
-                        <h2 class="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">Achievements</h2>
-                    </div>
-                    <div>
-                         <ol class="group/list">
-                             <li class="mb-12">
-                                <div class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                                    <div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
-                                    <header class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">Aug 23, 2025</header>
-                                    <div class="z-10 sm:col-span-6">
-                                        <h3 class="font-medium leading-snug text-slate-200">
-                                            <a class="group/link" href="https://sforce.co/verifycerts" target="_blank" rel="noopener noreferrer" aria-label="Salesforce Agentforce Specialist (opens in a new tab)">
-                                                <span class="inline-block">Salesforce Certified Agentforce Specialist
-                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path></svg>
-                                                </span>
-                                            </a>
-                                        </h3>
-                                        <p class="mt-2 text-sm leading-normal">Credential ID: 6696508</p>
-                                    </div>
-                                </div>
-                            </li>
-                         </ol>
-                    </div>
-                </section>
 
-                <section id="projects" class="scroll-mt-16 lg:scroll-mt-24 fade-in-section">
+                <section id="projects" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24 fade-in-section">
                     <div class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0 lg:backdrop-blur-none">
                         <h2 class="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">Projects</h2>
                     </div>
                     <div>
                         <ul class="group/list">
-                            <!-- Project 1 -->
-                            <li class="mb-12">
-                                <div class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                                    <div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
-                                    <div class="z-10 sm:order-2 sm:col-span-6">
-                                        <h3><a class="inline-flex items-baseline font-medium leading-tight text-lightest-slate hover:text-accent focus-visible:text-accent text-lg" href="https://github.com/saisrikolanu/Natural-Language-Processing" target="_blank" rel="noopener noreferrer">Generative AI & NLP Chatbot</a></h3>
-                                        <p class="mt-2 text-sm leading-normal">A multi-turn chatbot built with the GPT-3 API and LangChain, featuring conversational memory and TTS for a natural user experience.</p>
-                                    </div>
-                                    <img alt="NLP Project" loading="lazy" width="200" height="48" class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1" src="https://placehold.co/200x112/112240/64ffda?text=NLP">
-                                </div>
-                            </li>
-                             <!-- Project 2 -->
-                            <li class="mb-12">
-                                <div class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                                    <div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
-                                    <div class="z-10 sm:order-2 sm:col-span-6">
-                                        <h3><a class="inline-flex items-baseline font-medium leading-tight text-lightest-slate hover:text-accent focus-visible:text-accent text-lg" href="https://github.com/saisrikolanu/Credit-Card-Fraud-Detection" target="_blank" rel="noopener noreferrer">Fraud Detection Pipeline</a></h3>
-                                        <p class="mt-2 text-sm leading-normal">An end-to-end pipeline with ensemble ML models to process daily transaction data with 90% accuracy, using anomaly detection to reduce false positives.</p>
-                                    </div>
-                                    <img alt="Fraud Detection" loading="lazy" width="200" height="48" class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1" src="https://placehold.co/200x112/112240/64ffda?text=ML">
-                                </div>
-                            </li>
-                             <!-- Project 3 -->
-                            <li class="mb-12">
-                                <div class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                                    <div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
-                                    <div class="z-10 sm:order-2 sm:col-span-6">
-                                        <h3><a class="inline-flex items-baseline font-medium leading-tight text-lightest-slate hover:text-accent focus-visible:text-accent text-lg" href="https://github.com/saisrikolanu/Human-Action-Recognition" target="_blank" rel="noopener noreferrer">Human Action Recognition</a></h3>
-                                        <p class="mt-2 text-sm leading-normal">A computer vision system to classify human actions from video frames using deep learning models for real-time monitoring applications.</p>
-                                    </div>
-                                    <img alt="Action Recognition" loading="lazy" width="200" height="48" class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1" src="https://placehold.co/200x112/112240/64ffda?text=CV">
-                                </div>
-                            </li>
-                            <!-- Project 4 -->
-                            <li class="mb-12">
-                                <div class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                                    <div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
-                                    <div class="z-10 sm:order-2 sm:col-span-6">
-                                        <h3><a class="inline-flex items-baseline font-medium leading-tight text-lightest-slate hover:text-accent focus-visible:text-accent text-lg" href="https://github.com/saisrikolanu/Face-Recognition" target="_blank" rel="noopener noreferrer">Face Recognition</a></h3>
-                                        <p class="mt-2 text-sm leading-normal">A system to identify and verify individuals from images or video streams using computer vision techniques.</p>
-                                    </div>
-                                    <img alt="Face Recognition" loading="lazy" width="200" height="48" class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1" src="https://placehold.co/200x112/112240/64ffda?text=Face">
-                                </div>
-                            </li>
-                            <!-- Project 5 -->
-                            <li class="mb-12">
-                                <div class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                                    <div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
-                                    <div class="z-10 sm:order-2 sm:col-span-6">
-                                        <h3><a class="inline-flex items-baseline font-medium leading-tight text-lightest-slate hover:text-accent focus-visible:text-accent text-lg" href="https://github.com/saisrikolanu/Movie-Recommender-System" target="_blank" rel="noopener noreferrer">Movie Recommender System</a></h3>
-                                        <p class="mt-2 text-sm leading-normal">A system to recommend movies to users based on their viewing history and content-based filtering.</p>
-                                    </div>
-                                    <img alt="Movie Recommender" loading="lazy" width="200" height="48" class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1" src="https://placehold.co/200x112/112240/64ffda?text=Movies">
-                                </div>
-                            </li>
-                            <!-- Project 6 -->
-                            <li class="mb-12">
-                                <div class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                                    <div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
-                                    <div class="z-10 sm:order-2 sm:col-span-6">
-                                        <h3><a class="inline-flex items-baseline font-medium leading-tight text-lightest-slate hover:text-accent focus-visible:text-accent text-lg" href="https://github.com/saisrikolanu/Image-Caption-Generator" target="_blank" rel="noopener noreferrer">Image Caption Generator</a></h3>
-                                        <p class="mt-2 text-sm leading-normal">An AI model that automatically generates descriptive captions for images using a blend of CNNs and LSTMs.</p>
-                                    </div>
-                                    <img alt="Image Captioning" loading="lazy" width="200" height="48" class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1" src="https://placehold.co/200x112/112240/64ffda?text=Caption">
-                                </div>
-                            </li>
-                             <!-- Project 7 -->
-                            <li class="mb-12">
-                                <div class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                                    <div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
-                                    <div class="z-10 sm:order-2 sm:col-span-6">
-                                        <h3><a class="inline-flex items-baseline font-medium leading-tight text-lightest-slate hover:text-accent focus-visible:text-accent text-lg" href="https://github.com/saisrikolanu/Car-Price-Prediction" target="_blank" rel="noopener noreferrer">Car Price Prediction</a></h3>
-                                        <p class="mt-2 text-sm leading-normal">Using machine learning regression models to predict the market price of used cars based on various features.</p>
-                                    </div>
-                                    <img alt="Car Price Prediction" loading="lazy" width="200" height="48" class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1" src="https://placehold.co/200x112/112240/64ffda?text=Cars">
-                                </div>
-                            </li>
-                             <!-- Project 8 -->
-                            <li class="mb-12">
-                                <div class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                                    <div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
-                                    <div class="z-10 sm:order-2 sm:col-span-6">
-                                        <h3><a class="inline-flex items-baseline font-medium leading-tight text-lightest-slate hover:text-accent focus-visible:text-accent text-lg" href="https://github.com/saisrikolanu/Breast-Cancer-Prediction" target="_blank" rel="noopener noreferrer">Breast Cancer Prediction</a></h3>
-                                        <p class="mt-2 text-sm leading-normal">A classification model to predict the likelihood of breast cancer from diagnostic medical measurements.</p>
-                                    </div>
-                                    <img alt="Breast Cancer Prediction" loading="lazy" width="200" height="48" class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1" src="https://placehold.co/200x112/112240/64ffda?text=Health">
-                                </div>
-                            </li>
-                             <!-- Project 9 -->
-                            <li class="mb-12">
-                                <div class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                                    <div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
-                                    <div class="z-10 sm:order-2 sm:col-span-6">
-                                        <h3><a class="inline-flex items-baseline font-medium leading-tight text-lightest-slate hover:text-accent focus-visible:text-accent text-lg" href="https://github.com/saisrikolanu/Resume-Parser" target="_blank" rel="noopener noreferrer">Resume Parser</a></h3>
-                                        <p class="mt-2 text-sm leading-normal">A tool to automatically extract key information from resume documents using NLP techniques.</p>
-                                    </div>
-                                    <img alt="Resume Parser" loading="lazy" width="200" height="48" class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1" src="https://placehold.co/200x112/112240/64ffda?text=Parser">
-                                </div>
-                            </li>
+                            <!-- Corrected Project Links -->
+                            <li class="mb-12"><div class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"><div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div><div class="z-10 sm:order-2 sm:col-span-6"><h3><a class="inline-flex items-baseline font-medium leading-tight text-lightest-slate hover:text-accent focus-visible:text-accent text-lg" href="https://github.com/saisrikolanu/Natural-Language-Processing" target="_blank" rel="noopener noreferrer">Generative AI & NLP Chatbot</a></h3><p class="mt-2 text-sm leading-normal">A multi-turn chatbot built with the GPT-3 API and LangChain, featuring conversational memory and TTS for a natural user experience.</p></div><img alt="NLP Project" loading="lazy" width="200" height="48" class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1" src="https://placehold.co/200x112/112240/64ffda?text=NLP"></div></li>
+                            <li class="mb-12"><div class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"><div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div><div class="z-10 sm:order-2 sm:col-span-6"><h3><a class="inline-flex items-baseline font-medium leading-tight text-lightest-slate hover:text-accent focus-visible:text-accent text-lg" href="https://github.com/saisrikolanu/Credit-Card-Fraud-Detection" target="_blank" rel="noopener noreferrer">Fraud Detection Pipeline</a></h3><p class="mt-2 text-sm leading-normal">An end-to-end pipeline with ensemble ML models to process daily transaction data with 90% accuracy, using anomaly detection to reduce false positives.</p></div><img alt="Fraud Detection" loading="lazy" width="200" height="48" class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1" src="https://placehold.co/200x112/112240/64ffda?text=ML"></div></li>
+                            <li class="mb-12"><div class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"><div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div><div class="z-10 sm:order-2 sm:col-span-6"><h3><a class="inline-flex items-baseline font-medium leading-tight text-lightest-slate hover:text-accent focus-visible:text-accent text-lg" href="https://github.com/saisrikolanu/Human-Action-Recognition" target="_blank" rel="noopener noreferrer">Human Action Recognition</a></h3><p class="mt-2 text-sm leading-normal">A computer vision system to classify human actions from video frames using deep learning models for real-time monitoring applications.</p></div><img alt="Action Recognition" loading="lazy" width="200" height="48" class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1" src="https://placehold.co/200x112/112240/64ffda?text=CV"></div></li>
+                            <li class="mb-12"><div class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"><div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div><div class="z-10 sm:order-2 sm:col-span-6"><h3><a class="inline-flex items-baseline font-medium leading-tight text-lightest-slate hover:text-accent focus-visible:text-accent text-lg" href="https://github.com/saisrikolanu/Face-Recognition" target="_blank" rel="noopener noreferrer">Face Recognition</a></h3><p class="mt-2 text-sm leading-normal">A system to identify and verify individuals from images or video streams using computer vision techniques.</p></div><img alt="Face Recognition" loading="lazy" width="200" height="48" class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1" src="https://placehold.co/200x112/112240/64ffda?text=Face"></div></li>
+                            <li class="mb-12"><div class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"><div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div><div class="z-10 sm:order-2 sm:col-span-6"><h3><a class="inline-flex items-baseline font-medium leading-tight text-lightest-slate hover:text-accent focus-visible:text-accent text-lg" href="https://github.com/saisrikolanu/Movie-Recommender-System" target="_blank" rel="noopener noreferrer">Movie Recommender System</a></h3><p class="mt-2 text-sm leading-normal">A system to recommend movies to users based on their viewing history and content-based filtering.</p></div><img alt="Movie Recommender" loading="lazy" width="200" height="48" class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1" src="https://placehold.co/200x112/112240/64ffda?text=Movies"></div></li>
+                            <li class="mb-12"><div class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"><div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div><div class="z-10 sm:order-2 sm:col-span-6"><h3><a class="inline-flex items-baseline font-medium leading-tight text-lightest-slate hover:text-accent focus-visible:text-accent text-lg" href="https://github.com/saisrikolanu/Image-Caption-Generator" target="_blank" rel="noopener noreferrer">Image Caption Generator</a></h3><p class="mt-2 text-sm leading-normal">An AI model that automatically generates descriptive captions for images using a blend of CNNs and LSTMs.</p></div><img alt="Image Captioning" loading="lazy" width="200" height="48" class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1" src="https://placehold.co/200x112/112240/64ffda?text=Caption"></div></li>
+                            <li class="mb-12"><div class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"><div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div><div class="z-10 sm:order-2 sm:col-span-6"><h3><a class="inline-flex items-baseline font-medium leading-tight text-lightest-slate hover:text-accent focus-visible:text-accent text-lg" href="https://github.com/saisrikolanu/Car-Price-Prediction" target="_blank" rel="noopener noreferrer">Car Price Prediction</a></h3><p class="mt-2 text-sm leading-normal">Using machine learning regression models to predict the market price of used cars based on various features.</p></div><img alt="Car Price Prediction" loading="lazy" width="200" height="48" class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1" src="https://placehold.co/200x112/112240/64ffda?text=Cars"></div></li>
+                            <li class="mb-12"><div class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"><div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div><div class="z-10 sm:order-2 sm:col-span-6"><h3><a class="inline-flex items-baseline font-medium leading-tight text-lightest-slate hover:text-accent focus-visible:text-accent text-lg" href="https://github.com/saisrikolanu/Breast-Cancer-Prediction" target="_blank" rel="noopener noreferrer">Breast Cancer Prediction</a></h3><p class="mt-2 text-sm leading-normal">A classification model to predict the likelihood of breast cancer from diagnostic medical measurements.</p></div><img alt="Breast Cancer Prediction" loading="lazy" width="200" height="48" class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1" src="https://placehold.co/200x112/112240/64ffda?text=Health"></div></li>
+                            <li class="mb-12"><div class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"><div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div><div class="z-10 sm:order-2 sm:col-span-6"><h3><a class="inline-flex items-baseline font-medium leading-tight text-lightest-slate hover:text-accent focus-visible:text-accent text-lg" href="https://github.com/saisrikolanu/Resume-Parser" target="_blank" rel="noopener noreferrer">Resume Parser</a></h3><p class="mt-2 text-sm leading-normal">A tool to automatically extract key information from resume documents using NLP techniques.</p></div><img alt="Resume Parser" loading="lazy" width="200" height="48" class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1" src="https://placehold.co/200x112/112240/64ffda?text=Parser"></div></li>
                         </ul>
                     </div>
                 </section>
-
+                
             </main>
         </div>
     </div>
