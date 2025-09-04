@@ -17,9 +17,6 @@
         .text-accent {
             color: #64ffda;
         }
-        .bg-accent {
-            background-color: #64ffda;
-        }
         .bg-light-navy {
             background-color: #112240;
         }
@@ -49,11 +46,11 @@
         .nav-indicator {
             transition: all 0.3s ease;
         }
-        .active .nav-indicator {
+        .nav-link.active .nav-indicator {
             width: 4rem; /* w-16 */
             background-color: #ccd6f6; /* bg-lightest-slate */
         }
-        .active .nav-text {
+        .nav-link.active .nav-text {
             color: #ccd6f6; /* text-lightest-slate */
         }
     </style>
@@ -76,9 +73,9 @@
                     </p>
                     <nav class="nav hidden lg:block" aria-label="In-page jump links">
                         <ul class="mt-16 w-max">
-                            <li><a class="group flex items-center py-3" href="#about"><span class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-lightest-slate"></span><span class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-lightest-slate">About</span></a></li>
-                            <li><a class="group flex items-center py-3" href="#experience"><span class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-lightest-slate"></span><span class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-lightest-slate">Experience</span></a></li>
-                            <li><a class="group flex items-center py-3" href="#projects"><span class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-lightest-slate"></span><span class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-lightest-slate">Projects</span></a></li>
+                            <li><a class="nav-link group flex items-center py-3" href="#about"><span class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-lightest-slate"></span><span class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-lightest-slate">About</span></a></li>
+                            <li><a class="nav-link group flex items-center py-3" href="#experience"><span class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-lightest-slate"></span><span class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-lightest-slate">Experience</span></a></li>
+                            <li><a class="nav-link group flex items-center py-3" href="#projects"><span class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-lightest-slate"></span><span class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-lightest-slate">Projects</span></a></li>
                         </ul>
                     </nav>
                 </div>
@@ -109,16 +106,16 @@
                     <div>
                         <ol class="group/list">
                             <li class="mb-12">
-                                <a class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50" href="https://www.cognizant.com" target="_blank" rel="noopener noreferrer">
+                                <div class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
                                     <div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
                                     <header class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">Aug 2023 — Jul 2024</header>
                                     <div class="z-10 sm:col-span-6">
                                         <h3 class="font-medium leading-snug text-slate-200">
-                                            <div>
+                                            <a href="https://www.cognizant.com" target="_blank" rel="noopener noreferrer">
                                                 <span class="inline-block">Programmer Analyst · Cognizant
-                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="inline-block h-4 w-4 shrink-0 transition-transform group-hover:-translate-y-1 group-hover:translate-x-1 group-focus-visible:-translate-y-1 group-focus-visible:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path></svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="inline-block h-4 w-4 shrink-0 transition-transform group-hover:-translate-y-1 group-hover:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path></svg>
                                                 </span>
-                                            </div>
+                                            </a>
                                         </h3>
                                         <p class="mt-2 text-sm leading-normal">Developed generative AI applications using GPT-3 and LangChain, enhancing conversational capabilities. Built and deployed ML models that improved prediction accuracy by 20%. Collaborated with cross-functional teams to align AI solutions with business goals.</p>
                                         <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
@@ -129,10 +126,10 @@
                                             <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-accent">AWS</div></li>
                                         </ul>
                                     </div>
-                                </a>
+                                </div>
                             </li>
                             <li class="mb-12">
-                                <a class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50" href="#" target="_blank" rel="noopener noreferrer">
+                                <div class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
                                     <div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
                                     <header class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">Dec 2019 — Dec 2022</header>
                                     <div class="z-10 sm:col-span-6">
@@ -147,7 +144,7 @@
                                              <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-accent">Data Pipelines</div></li>
                                         </ul>
                                     </div>
-                                </a>
+                                </div>
                             </li>
                         </ol>
                     </div>
@@ -269,7 +266,7 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const sections = document.querySelectorAll('main section');
-            const navLinks = document.querySelectorAll('nav ul li a');
+            const navLinks = document.querySelectorAll('nav ul li a.nav-link');
 
             const makeNavLinksActive = (id) => {
                 navLinks.forEach(link => {
@@ -283,11 +280,13 @@
 
             const observer = new IntersectionObserver((entries) => {
                 let visibleSectionId = null;
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        visibleSectionId = entry.target.id;
+                // Find the first visible section from the top
+                for(let i = 0; i < entries.length; i++){
+                    if(entries[i].isIntersecting){
+                        visibleSectionId = entries[i].target.id;
+                        break;
                     }
-                });
+                }
                 if (visibleSectionId) {
                     makeNavLinksActive(visibleSectionId);
                 }
@@ -297,8 +296,8 @@
                 observer.observe(section);
             });
             
-            // Initial check in case the user loads in the middle of the page
-            if (window.scrollY === 0) {
+            // Initial check in case the user loads at the top of the page
+            if (window.scrollY < 100) {
                  makeNavLinksActive('about');
             }
 
