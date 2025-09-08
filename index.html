@@ -1,147 +1,210 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sai Sri Kolanu | AI/ML Engineer</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #0a192f;
-            color: #8892b0;
-        }
-        .text-accent {
-            color: #64ffda;
-        }
-        .text-lightest-slate {
-            color: #ccd6f6;
-        }
-        .fade-in-section {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-        }
-        .fade-in-section.is-visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        .nav-indicator {
-            transition: all 0.3s ease;
-        }
-        .nav-link.active .nav-indicator {
-            width: 4rem;
-            background-color: #ccd6f6;
-        }
-        .nav-link.active .nav-text {
-            color: #ccd6f6;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sai Sri Kolanu | AI/ML Engineer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; background-color: #0a192f; color: #8892b0; }
+    .text-accent { color: #64ffda; }
+    .text-lightest-slate { color: #ccd6f6; }
+    .fade-in-section { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+    .fade-in-section.is-visible { opacity: 1; transform: translateY(0); }
+  </style>
 </head>
 <body class="text-slate-400">
 
-    <div class="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
-        <div class="lg:flex lg:justify-between lg:gap-4">
-            
-            <!-- LEFT COLUMN -->
-            <header class="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
-                <div>
-                    <h1 class="text-4xl font-bold tracking-tight text-lightest-slate sm:text-5xl">
-                        Sai Sri Kolanu
-                    </h1>
-                    <h2 class="mt-3 text-lg font-medium tracking-tight text-lightest-slate sm:text-xl">
-                        AI/ML Engineer
-                    </h2>
-                    <p class="mt-4 max-w-xs leading-normal">
-                        I build intelligent applications and scalable AI-powered systems from concept to production.
-                    </p>
-                    <nav class="nav hidden lg:block" aria-label="In-page jump links">
-                        <ul class="mt-16 w-max">
-                            <li><a class="nav-link group flex items-center py-3" href="#about"><span class="nav-indicator mr-4 h-px w-8 bg-slate-600"></span><span class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500">About</span></a></li>
-                            <li><a class="nav-link group flex items-center py-3" href="#experience"><span class="nav-indicator mr-4 h-px w-8 bg-slate-600"></span><span class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500">Experience</span></a></li>
-                            <li><a class="nav-link group flex items-center py-3" href="#projects"><span class="nav-indicator mr-4 h-px w-8 bg-slate-600"></span><span class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500">Projects</span></a></li>
-                            <li><a class="nav-link group flex items-center py-3" href="#achievements"><span class="nav-indicator mr-4 h-px w-8 bg-slate-600"></span><span class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500">Achievements</span></a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <ul class="ml-1 mt-8 flex items-center" aria-label="Social media">
-                    <li class="mr-5 shrink-0"><a href="https://github.com/saisrikolanu" target="_blank" class="block hover:text-lightest-slate">GitHub</a></li>
-                    <li class="mr-5 shrink-0"><a href="https://linkedin.com/in/saisri-kolanu" target="_blank" class="block hover:text-lightest-slate">LinkedIn</a></li>
-                    <li class="mr-5 shrink-0"><a href="mailto:kolanusaisri13@gmail.com" class="block hover:text-lightest-slate">Email</a></li>
-                </ul>
-            </header>
-
-            <!-- RIGHT COLUMN -->
-            <main id="content" class="pt-24 lg:w-1/2 lg:py-24">
-                
-                <!-- ABOUT -->
-                <section id="about" class="mb-16 fade-in-section">
-                    <p class="mb-4">As an AI/ML Engineer, I specialize in generative AI, large language models, and the end-to-end deployment of machine learning solutions.</p>
-                    <p>I also have a deep interest in performance and infrastructure, with skills in GPU programming, Apache Kafka, and Spark for distributed systems.</p>
-                </section>
-                
-                <!-- EXPERIENCE -->
-                <section id="experience" class="mb-16 fade-in-section">
-                    <h2 class="text-sm font-bold uppercase tracking-widest text-slate-200 mb-6">Experience</h2>
-                    <p>Details of your work experience remain here...</p>
-                </section>
-
-                <!-- PROJECTS -->
-                <section id="projects" class="mb-16 fade-in-section">
-                    <h2 class="text-sm font-bold uppercase tracking-widest text-slate-200 mb-6">Projects</h2>
-                    <ul class="group/list">
-                        <!-- Breast Cancer Diagnosis Project -->
-                        <li class="mb-12">
-                          <div class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4">
-                            <div class="z-10 sm:order-2 sm:col-span-6">
-                              <h3>
-                                <a class="inline-flex items-baseline font-medium leading-tight text-lightest-slate hover:text-accent text-lg"
-                                   href="https://github.com/saisrikolanu/Breast-Cancer-Diagnosis-Classification-Regression-with-Machine-Learning"
-                                   target="_blank" rel="noopener noreferrer">
-                                  Breast Cancer Diagnosis – Classification & Regression
-                                </a>
-                              </h3>
-                              <p class="mt-2 text-sm leading-normal">
-                                A machine learning project applying classification and regression models to predict and diagnose breast cancer from medical datasets, improving early detection accuracy.
-                              </p>
-                            </div>
-                            <img alt="Breast Cancer Diagnosis Project"
-                                 loading="lazy"
-                                 width="200" height="112"
-                                 class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
-                                 src="https://placehold.co/200x112/112240/64ffda?text=Health">
-                          </div>
-                        </li>
-                    </ul>
-                </section>
-
-                <!-- ACHIEVEMENTS -->
-                <section id="achievements" class="fade-in-section">
-                    <h2 class="text-sm font-bold uppercase tracking-widest text-slate-200 mb-6">Achievements</h2>
-                    <p>Salesforce Certified Agentforce Specialist · Credential ID: 6696508</p>
-                </section>
-
-            </main>
+  <div class="mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0">
+    <div class="lg:flex lg:justify-between lg:gap-4">
+      
+      <!-- LEFT COLUMN -->
+      <header class="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
+        <div>
+          <h1 class="text-4xl font-bold tracking-tight text-lightest-slate sm:text-5xl">Sai Sri Kolanu</h1>
+          <h2 class="mt-3 text-lg font-medium tracking-tight text-lightest-slate sm:text-xl">AI/ML Engineer</h2>
+          <p class="mt-4 max-w-xs">I build intelligent applications and scalable AI-powered systems from concept to production.</p>
+          <nav class="hidden lg:block mt-8">
+            <ul class="space-y-2 text-slate-500 text-xs font-bold uppercase tracking-widest">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#achievements">Achievements</a></li>
+            </ul>
+          </nav>
         </div>
+        <ul class="mt-8 flex space-x-5">
+          <li><a href="https://github.com/saisrikolanu" target="_blank" class="hover:text-lightest-slate">GitHub</a></li>
+          <li><a href="https://linkedin.com/in/saisri-kolanu" target="_blank" class="hover:text-lightest-slate">LinkedIn</a></li>
+          <li><a href="mailto:kolanusaisri13@gmail.com" class="hover:text-lightest-slate">Email</a></li>
+        </ul>
+      </header>
+
+      <!-- RIGHT COLUMN -->
+      <main id="content" class="pt-24 lg:w-1/2 lg:py-24">
+        
+        <!-- ABOUT -->
+        <section id="about" class="mb-16 fade-in-section">
+          <p class="mb-4">As an AI/ML Engineer, I specialize in generative AI, large language models, and the end-to-end deployment of machine learning solutions.</p>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="mb-16 fade-in-section">
+          <h2 class="text-sm font-bold uppercase tracking-widest text-slate-200 mb-6">Projects</h2>
+          <ul class="group/list space-y-12">
+
+            <!-- Each project -->
+            <li>
+              <div class="grid gap-4 sm:grid-cols-8">
+                <div class="sm:col-span-6">
+                  <h3><a href="https://github.com/saisrikolanu/Breast-Cancer-Diagnosis-Classification-Regression-with-Machine-Learning" target="_blank" class="text-lg font-medium text-lightest-slate hover:text-accent">Breast Cancer Diagnosis – Classification & Regression</a></h3>
+                  <p class="mt-2 text-sm">ML classification & regression models to predict breast cancer from medical data, improving early detection accuracy.</p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="grid gap-4 sm:grid-cols-8">
+                <div class="sm:col-span-6">
+                  <h3><a href="https://github.com/saisrikolanu/Toxic-Comment-Classification-with-NLP-and-Deep-Learning" target="_blank" class="text-lg font-medium text-lightest-slate hover:text-accent">Toxic Comment Classification</a></h3>
+                  <p class="mt-2 text-sm">Deep learning NLP models to classify and detect toxic comments in online text datasets.</p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="grid gap-4 sm:grid-cols-8">
+                <div class="sm:col-span-6">
+                  <h3><a href="https://github.com/saisrikolanu/Real-Time-K-mer-Counting-with-PySpark-Streaming" target="_blank" class="text-lg font-medium text-lightest-slate hover:text-accent">Real-Time K-mer Counting with PySpark</a></h3>
+                  <p class="mt-2 text-sm">Streaming-based solution for real-time DNA sequence analysis using PySpark.</p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="grid gap-4 sm:grid-cols-8">
+                <div class="sm:col-span-6">
+                  <h3><a href="https://github.com/saisrikolanu/Word-Count-Dijkstra-and-PageRank-with-Apache-Spark" target="_blank" class="text-lg font-medium text-lightest-slate hover:text-accent">Word Count, Dijkstra & PageRank</a></h3>
+                  <p class="mt-2 text-sm">Big data algorithms (WordCount, Dijkstra, PageRank) implemented with Apache Spark.</p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="grid gap-4 sm:grid-cols-8">
+                <div class="sm:col-span-6">
+                  <h3><a href="https://github.com/saisrikolanu/Financial-Transaction-Irregularity-Detection-with-PySpark" target="_blank" class="text-lg font-medium text-lightest-slate hover:text-accent">Financial Transaction Irregularity Detection (PySpark)</a></h3>
+                  <p class="mt-2 text-sm">Anomaly detection pipeline using PySpark to flag financial irregularities in real-time data.</p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="grid gap-4 sm:grid-cols-8">
+                <div class="sm:col-span-6">
+                  <h3><a href="https://github.com/saisrikolanu/Detecting-Financial-Irregularities-with-Machine-Learning-Black-Money-Dataset-" target="_blank" class="text-lg font-medium text-lightest-slate hover:text-accent">Detecting Financial Irregularities (Black Money Dataset)</a></h3>
+                  <p class="mt-2 text-sm">ML-based fraud detection system applied on financial datasets to detect irregularities.</p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="grid gap-4 sm:grid-cols-8">
+                <div class="sm:col-span-6">
+                  <h3><a href="https://github.com/saisrikolanu/Coin-Toss-Simulation-and-Engagement-Decay-Modeling" target="_blank" class="text-lg font-medium text-lightest-slate hover:text-accent">Coin Toss Simulation & Engagement Decay</a></h3>
+                  <p class="mt-2 text-sm">Statistical simulation of coin toss events with decay modeling for engagement analysis.</p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="grid gap-4 sm:grid-cols-8">
+                <div class="sm:col-span-6">
+                  <h3><a href="https://github.com/saisrikolanu/Comparative-Evaluation-of-YOLOv8-and-DeepLabV3-for-Food-Detection-and-Segmentation" target="_blank" class="text-lg font-medium text-lightest-slate hover:text-accent">YOLOv8 vs DeepLabV3 for Food Detection</a></h3>
+                  <p class="mt-2 text-sm">Comparative study of YOLOv8 and DeepLabV3 for image segmentation and food detection.</p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="grid gap-4 sm:grid-cols-8">
+                <div class="sm:col-span-6">
+                  <h3><a href="https://github.com/saisrikolanu/Pneumonia-Detection-from-Pediatric-Chest-X-Rays-using-Transfer-Learning" target="_blank" class="text-lg font-medium text-lightest-slate hover:text-accent">Pneumonia Detection (Chest X-rays)</a></h3>
+                  <p class="mt-2 text-sm">Transfer learning approach for detecting pneumonia in pediatric chest X-ray datasets.</p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="grid gap-4 sm:grid-cols-8">
+                <div class="sm:col-span-6">
+                  <h3><a href="https://github.com/saisrikolanu/Emotion-Aware-AAC-with-Fine-Tuned-LLMs-and-RAG" target="_blank" class="text-lg font-medium text-lightest-slate hover:text-accent">Emotion-Aware AAC with LLMs & RAG</a></h3>
+                  <p class="mt-2 text-sm">Assistive communication system using fine-tuned LLMs and retrieval-augmented generation.</p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="grid gap-4 sm:grid-cols-8">
+                <div class="sm:col-span-6">
+                  <h3><a href="https://github.com/saisrikolanu/Stance-Detection-with-RNN-BiRNN-and-LSTM" target="_blank" class="text-lg font-medium text-lightest-slate hover:text-accent">Stance Detection with RNNs</a></h3>
+                  <p class="mt-2 text-sm">NLP stance detection task using RNN, Bi-RNN, and LSTM architectures.</p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="grid gap-4 sm:grid-cols-8">
+                <div class="sm:col-span-6">
+                  <h3><a href="https://github.com/saisrikolanu/Handwritten-Digit-and-Face-Feature-Classification-with-Neural-Networks" target="_blank" class="text-lg font-medium text-lightest-slate hover:text-accent">Digit & Face Feature Classification</a></h3>
+                  <p class="mt-2 text-sm">Neural network-based classification of handwritten digits and face features.</p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="grid gap-4 sm:grid-cols-8">
+                <div class="sm:col-span-6">
+                  <h3><a href="https://github.com/saisrikolanu/Air-Quality-Prediction-with-RNN-and-LSTM" target="_blank" class="text-lg font-medium text-lightest-slate hover:text-accent">Air Quality Prediction</a></h3>
+                  <p class="mt-2 text-sm">Time-series prediction of air quality levels using RNNs and LSTMs.</p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="grid gap-4 sm:grid-cols-8">
+                <div class="sm:col-span-6">
+                  <h3><a href="https://github.com/saisrikolanu/Discriminant-Analysis-and-Regression-Models-with-Regularization" target="_blank" class="text-lg font-medium text-lightest-slate hover:text-accent">Discriminant Analysis & Regression</a></h3>
+                  <p class="mt-2 text-sm">Applied discriminant analysis and regression models with regularization techniques.</p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="grid gap-4 sm:grid-cols-8">
+                <div class="sm:col-span-6">
+                  <h3><a href="https://github.com/saisrikolanu/Logistic-Regression-and-SVMs-on-MNIST" target="_blank" class="text-lg font-medium text-lightest-slate hover:text-accent">Logistic Regression & SVMs on MNIST</a></h3>
+                  <p class="mt-2 text-sm">MNIST digit classification with logistic regression and support vector machines.</p>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </section>
+
+      </main>
     </div>
-    
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const faders = document.querySelectorAll('.fade-in-section');
-            const appearOptions = { threshold: 0, rootMargin: "0px 0px -150px 0px" };
-            const appearOnScroll = new IntersectionObserver((entries, obs) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('is-visible');
-                        obs.unobserve(entry.target);
-                    }
-                });
-            }, appearOptions);
-            faders.forEach(fader => appearOnScroll.observe(fader));
-        });
-    </script>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const faders = document.querySelectorAll('.fade-in-section');
+      const appearOnScroll = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('is-visible'); obs.unobserve(entry.target); } });
+      });
+      faders.forEach(fader => appearOnScroll.observe(fader));
+    });
+  </script>
 </body>
 </html>
